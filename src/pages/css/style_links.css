@@ -1,10 +1,11 @@
-.question-hyperlink{
-    color: #8f1010;
-}
-.question-hyperlink::before{
-    content: "[NEW] ->";
+a.question-hyperlink{
+    color: #eebb14;
 }
 
-.question-hyperlink:visited{
-    color: tomato;
+a.question-hyperlink:visited{
+    color: #45c711;
+}
+.question-hyperlink:visited ::before {
+    content: " (YA VISITADO)";
+    color: #777;
 }
