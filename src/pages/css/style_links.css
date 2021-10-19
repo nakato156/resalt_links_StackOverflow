@@ -1,0 +1,10 @@
+.question-hyperlink{
+    color: #8f1010;
+}
+.question-hyperlink::before{
+    content: "[NEW] ->";
+}
+
+.question-hyperlink:visited{
+    color: tomato;
+}
