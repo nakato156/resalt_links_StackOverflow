@@ -31,3 +31,11 @@ async function init () {
         })
     });
 }
+
+browser.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
+    if(msg.colors){
+        document.documentElement.style.setProperty('--visited', msg.colors[0]);
+        document.documentElement.style.setProperty('--noVisited', msg.colors[1]);
+        document.documentElement.style.setProperty("--closed", msg.colors[2])
+    }
+});

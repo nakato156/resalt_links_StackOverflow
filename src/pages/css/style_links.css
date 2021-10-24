@@ -1,11 +1,11 @@
+:root{
+    --visited: #45c711;
+    --noVisited: #eebb14;
+}
 a.question-hyperlink{
-    color: #eebb14;
+    color: var(--noVisited);
 }
 
 a.question-hyperlink:visited{
-    color: #45c711;
-}
-.question-hyperlink:visited ::before {
-    content: " (YA VISITADO)";
-    color: #777;
+    color: var(--visited);
 }
